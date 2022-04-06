@@ -1,0 +1,12 @@
+int binary_to_decimal(string str)
+ {
+     int base = 1;
+     int ans = 0;
+     int size = str.length()-1;
+     for(int i = size; i >= 0; i--)
+     {
+         ans += ((int)(str[i]-'0')*base);
+         base = base * 2;
+     }
+     return ans;
+ }
